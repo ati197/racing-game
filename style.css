@@ -21,11 +21,11 @@ body {
   bottom: 10px;
   left: 130px;
 }
-#car {
+#enemy {
   width: 40px;
   height: 60px;
-  background: red;
+  background: yellow;
   position: absolute;
-  bottom: 10px;
-  left: 130px;
+  top: 0;
+  left: 100px;
 }
