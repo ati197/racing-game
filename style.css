@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  background: #222;
+  color: white;
+}
+
+#gameArea {
+  width: 300px;
+  height: 500px;
+  margin: auto;
+  background: #444;
+  position: relative;
+  overflow: hidden;
+}
+
+#car {
+  width: 40px;
+  height: 60px;
+  background: red;
+  position: absolute;
+  bottom: 10px;
+  left: 130px;
+}
