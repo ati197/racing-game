@@ -32,5 +32,19 @@ function moveEnemy() {
   checkCollision();
   requestAnimationFrame(moveEnemy);
 }
+function checkCollision() {
+  let carRect = car.getBoundingClientRect();
+  let enemyRect = enemy.getBoundingClientRect();
+
+  if (
+    carRect.left < enemyRect.right &&
+    carRect.right > enemyRect.left &&
+    carRect.top < enemyRect.bottom &&
+    carRect.bottom > enemyRect.top
+  ) {
+    alert("💥 Game Over!");
+    location.reload();
+  }
+}
 
 moveEnemy();
