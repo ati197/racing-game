@@ -48,3 +48,19 @@ function checkCollision() {
 }
 
 moveEnemy();
+let road = document.getElementById("road");
+let roadTop = -500;
+
+function moveRoad() {
+  roadTop += 5;
+
+  if (roadTop >= 0) {
+    roadTop = -500;
+  }
+
+  road.style.top = roadTop + "px";
+
+  requestAnimationFrame(moveRoad);
+}
+
+moveRoad();
